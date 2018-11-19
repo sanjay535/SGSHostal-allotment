@@ -1,0 +1,73 @@
+<html>
+    
+    <style>
+        
+        header
+        {
+           background-size: cover;
+           background-image:url(sg3.jpg);
+           height: 100%;
+           
+        }
+        .colortheme
+        {
+            font-size:20px;
+            color:yellow;
+        }
+        .anytheme
+        {
+            color:blue;
+            
+        }
+        .redtheme
+        {
+            
+            color:red;
+        }
+   </style> 
+    <body bgcolor="white">
+        <script>
+    function check()
+    {
+
+            
+            
+            if(frm.id.value==0)
+            {
+            alert('Id is required');
+            return;
+            }
+          
+            if(frm.pass.value==0){
+                alert("password is erequired");
+            return;}
+        
+    }
+    </script>
+
+        <header>
+        <form action="wardancode.jsp" name="frm">
+           
+        <table class="anytheme" border="0" cellpadding="5" cellspacing="10" align="center" style="top: 0px">
+            <tr align="center">
+                 <td class="colortheme">WARDON LOGIN PAGE</td> 
+          
+                
+            </tr>
+             <tr>
+                 <td class="anytheme">Username</td> 
+                <td><input type="text" name="id"></td>
+                
+             <tr>
+                 <td class="anytheme"> Password</td> 
+                <td><input type="password" name="pass"></td>
+                
+             <tr align="center">
+                 <td><button type="submit" onclick="check()">Login</button></td>
+                 <td><a href="home.jsp">BACK</a></td>
+            </tr>
+        </table>
+       </form>
+            </header>
+        </body>
+    </html>
